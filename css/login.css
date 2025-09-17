@@ -1,0 +1,101 @@
+/* CSS Document 
+body {
+	background-color:#173f92;
+}
+
+.container {
+	margin-top: 100px;
+	box-sizing: border-box;
+	width: 500px;
+	height: 500px;
+  	border: 5px solid #FFF;
+	padding:15px;
+	background-color:#EBBD30;
+}
+.logo{
+	background-color:#FFF;
+	padding:20px;
+	margin-bottom:5px;
+}
+.titulo1{
+	color:#FFF;
+}	
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.btn-primary {
+	background-color: #4CAF50;
+	border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+	background-color: #3e8e41;
+	border-color: #173f92;
+}
+*/
+/* CSS Document */
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+}
+
+body {
+  
+  background-color:#173f92;
+}
+
+#btn_login {
+	margin-top:20px;
+}
+
+
+.container {
+	margin-top: 100px;
+	box-sizing: border-box;
+	width: 380px;
+	height: 500px;
+  	border: 5px solid #FFF;
+	padding:15px;
+	background-color:#EBBD30;
+}
+.form-signin {
+  width: 100%;
+  max-width: 150px;
+  padding: 15px;
+  margin: auto;
+}
+
+.message{
+padding:30px;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+@media (max-width: 576px) {
+  .form-signin {
+    padding: 10px;
+  }
+}
+
+.logo{
+	background-color:#FFF;
+	padding:10px;
+	margin-bottom:5px;
+}
+.titulo1{
+	color:#FFF;
+}	

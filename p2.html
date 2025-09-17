@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Página con Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+        }
+        .logo {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-3">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>La parte superior de la página</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menú de navegación lateral -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#item1" onclick="showContent('item1')">Item 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#item2" onclick="showContent('item2')">Item 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#item3" onclick="showContent('item3')">Item 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Contenido -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 content">
+                <div id="content">
+                    <h2>Bienvenido</h2>
+                    <p>Selecciona un ítem del menú para ver el contenido.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>La parte inferior de la página</p>
+    </footer>
+
+    <script>
+        function showContent(item) {
+            const content = {
+                item1: '<h2>Contenido del Item 1</h2><p>Este es el contenido del primer ítem.</p>',
+                item2: '<h2>Contenido del Item 2</h2><p>Este es el contenido del segundo ítem.</p>',
+                item3: '<h2>Contenido del Item 3</h2><p>Este es el contenido del tercer ítem.</p>'
+            };
+            document.getElementById('content').innerHTML = content[item];
+        }
+    </script>
+</body>
+</html>

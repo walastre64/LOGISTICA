@@ -1,0 +1,210 @@
+#user_password, #user_login, #btn_acceder, #btn_cancelar, #btn_olvido ,#btn_registrar {
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+} 
+#img_logo , #img_titulo{
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+	font-size: 24px;
+}
+.txtventana {font-size: 10px}
+
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalbox{
+    width: 430px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+
+.modalbox2{
+    width: 700px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+
+.modalmask2:target .resize{
+    width:700px;
+    height:200px;
+}
+
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+.modalmask:target .movedown{       
+    margin:2% auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 9px;
+	text-align: center;
+	top: 5px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius:3px;
+ 
+}
+ 
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+
+.close2 {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 2px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius:3px;
+ 
+}
+ 
+.close2:hover {
+    background: #FAAC58;
+    color:#222;
+}
+.close_submit {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 412px;
+	text-align: center;
+	top: 2px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius:3px;
+ 
+}
+ 
+.close_submit:hover {
+    background: #FAAC58;
+    color:#222;
+}
+
+.boton_pantalla_modal{
+background-color: #A80000;
+ background-image: -webkit-linear-gradient(rgba(136, 0, 0, .8), rgba(72, 194, 52, .2));
+ background-image: -moz-linear-gradient(rgba(136, 0, 0, .8), rgba(72, 194, 52, .2));
+ background-image: -o-linear-gradient(rgba(136, 0, 0, .8), rgba(72, 194, 52, .2));
+ background-image: linear-gradient(rgba(136, 0, 0, .8), rgba(72, 194, 52, .2));
+-ms-border-radius:6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: 0 6px 0 #660000, 0 10px 20px rgba(0, 0, 0, .4);
+-moz-box-shadow: 0 6px 0 #660000, 0 10px 20px rgba(0, 0, 0, .4);
+box-shadow: 0 6px 0 #660000, 0 10px 20px rgba(0, 0, 0, .4);
+color: #fff;
+display: inline-block;
+font-family: "Pacifico", Arial, sans-serif;
+font-size: 10px;
+line-height: 1;
+padding: 10px 20px;
+text-decoration: none;
+text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
+}
+.boton_pantalla_modal:active{
+/* Disminiumos la cantidad de sombras */
+-webkit-box-shadow: 0 5px 0 #660000, 0 5px 10px rgba(0, 0, 0, .4);
+-moz-box-shadow: 0 5px 0 #660000, 0 5px 10px rgba(0, 0, 0, .4);
+box-shadow: 0 5px 0 #660000, 0 5px 10px rgba(0, 0, 0, .4);
+/* Movemos ligeramente el botón hacia abajo */
+position: relative;
+top: 5px;
+}
+
+
+/*------------------------------------------*/
+/* css para ventana emergente de error */
+/*------------------------------------------*/
+.boton_error {
+    float:left;
+    margin-right:10px;
+    margin-top:200px;
+    width:130px;
+    height:40px;
+    background:#222;
+    color:#fff;
+    padding:16px 6px 0 6px;
+    cursor:pointer;
+    text-align:center;
+}
+ 
+.boton_error:hover{color:#01DF01}
+ 
+.ventana_error{
+ 
+    display:none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#808080;
+    line-height:28px;
+    font-size:15px;
+    text-align:justify;
+ 
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de mi página"> <h1>Mi Página Web</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarContenido('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarContenido('acerca')">Acerca de</a></li>
+            <li><a href="#" onclick="mostrarContenido('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main id="contenido">
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Este es el contenido inicial.</p>
+        </section>
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+            <p>Aquí iría información sobre la página.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Formulario de contacto o información de contacto.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarContenido(seccion) {
+            // Ocultamos todas las secciones
+            var secciones = document.getElementsByTagName("section");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].style.display = "none";
+            }
+            
+            // Mostramos la sección seleccionada
+            document.getElementById(seccion).style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* CSS Document */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+     @media screen and (max-width: 800px){
+            #cell-sidebar {
+                flex-basis: 52px;
+            }
+            #cell-content {
+                flex-basis: calc(100% - 52px);
+            }		
+	}
+	
+	@media all and (max-width: 800px){
+		div{
+			width:100%;
+			height:auto;
+			margin-left:10px;
+		 }
+	}
+
+#contenedor {
+  height: 100%;
+  width: 100%;
+}	
+
+#main1 {
+ 	height: 93vh;
+  	width: 100%;
+	background-image:url(../imagenes/JPG/fondoBahiaSupermarket.jpg)
+}
+
+.divider-vertical {
+	/*height: 50px;*/
+	margin: 0 9px;
+	border-left: 1px solid #F2F2F2;
+	border-right: 1px solid #FFF;
+}
+
+#menu_horizontal li {
+	margin-left: 25px;
+	padding: 0px;
+	
+}
+
+#li_menu div{
+	font-size:12px;
+	background:#C5C5C5;
+}
+
+#main1 {    
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+#contenedor{
+	overflow-y:hidden;
+	overflow-x:hidden;
+	/* opacity: 0.9; */
+}
+
+#a_titulo{
+	/* background:#3399CC;*/
+	color: white;	
+}
+
+#b_titulo{
+	padding-right:20px;
+}
+
+#a_rolA { 
+	color:#3399CC;
+}
+#a_rolB { 
+	color:#00CC66;
+}
+
+.menu_pqn{
+	font-size:12px;
+}
+
+nav.navbar {
+    background-color:#3399CC;
+	/*background-color:#FFFF99;*/
+}
+.sombra_texto{
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+
+
+
+#main1{
+	
+	/*background-image: url(../imagenes/png/logo_np_marcadeagua2.png);*/
+}

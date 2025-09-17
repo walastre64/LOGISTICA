@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+.flexbox {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 100px;
+
+  background: #ffff99;
+  color: #333;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Incluye jQuery y Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<!-- Crea la tabla -->
+<table class="table" id="miTabla">
+  <thead>
+    <tr>
+      <th>Encabezado 1</th>
+      <th>Encabezado 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td >Dato 1</td>
+      <td>x1</td>
+    </tr>
+    <tr>
+      <td>Dato 2</td>
+      <td>x2</td>
+    </tr>
+    <tr>
+      <td>Dato 3</td>
+      <td>x3</td>
+    </tr>
+    <!-- Más filas según sea necesario -->
+  </tbody>
+</table>
+<p><strong>hola</strong><p/>
+
+
+<div class="flexbox">
+<strong>flexbox</strong> 
+</div>
+
+</body>
+</html> 
+
+
+
+
+<!-- Código JavaScript para manejar el evento de clic -->
+<script>
+$(document).ready(function(){
+  $("#miTabla tbody tr").click(function(){
+    // Crea una nueva fila
+    var nuevaFila = $("<tr><td>Nuevo dato 1</td><td>Nuevo dato 2</td></tr>");
+    
+    // Añade la nueva fila después de la fila en la que se hizo clic
+    $(this).after(nuevaFila);
+  });
+});
+</script>

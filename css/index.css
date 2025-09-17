@@ -1,0 +1,72 @@
+/* CSS Document */
+<!--
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#pie{
+	font-size: 14px;
+}
+
+#div_titulo {
+	
+	background:red;
+	color:#FFFFFF;
+	box-shadow: 5px 5px grey;
+   -webkit-box-shadow: 5px 5px 5px grey;
+   -moz-box-shadow: 5px 5px 5px grey;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#div_caja1{
+
+	background:#EAEAEA;
+	box-shadow: 10px 10px grey;
+}
+
+#div_caja2{
+	background:#FFFFFF;	
+	color:#FFFFFF;
+	padding: 20px 180px;
+	margin: 10px;
+	
+	background-image: url(imagenes/png/saint_sigesp.png);
+}
+
+
+#div_caja3{
+	background:#AFE79C;
+	padding: 20px 5px;
+	margin: 5px;	
+	border-radius: 50px;
+}
+
+input,textarea{
+	padding:10px;
+	width:100%;
+	outline:none;
+	transition: all 0.15s ease-in-out;
+	border-radius:3px;
+	border:1px solid rgba(0,0,0,0.2);  
+	
+}
+
+
+#txt_nombreR {
+    position: relative;
+    display: block;
+    margin: 0 0 0 110px;
+}
+
+
+footer{
+	margin: 0 auto;
+	display:block;
+	border-radius:0.5em;
+	width:96%;
+	vertical-align:middle;
+	text-align:center;
+}
+-->
+

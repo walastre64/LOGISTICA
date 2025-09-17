@@ -1,0 +1,38 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el div superior */
+.div-superior {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los select */
+.select-container {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el div inferior (datatable) */
+.div-inferior {
+    background-color: #fff;
+    padding: 20px;
+    /* Agrega estilos específicos para tu datatable aquí */
+}
